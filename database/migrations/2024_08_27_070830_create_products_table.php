@@ -30,8 +30,8 @@ return new class extends Migration
             $table->integer('cost');
             $table->integer('minimum_purchase_limit')->nullable()->default(1);
             $table->integer('maximum_purchase_limit')->nullable()->default(10);
-            $table->string('description', 10000);
-            $table->string('refund_policy', 10000);
+            $table->string('description', 6000);
+            $table->string('refund_policy', 6000);
             $table->string('weight')->nullable();
             $table->string('short_url')->nullable();
             $table->string('qrcode')->nullable();

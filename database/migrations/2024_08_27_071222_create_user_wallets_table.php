@@ -17,7 +17,7 @@ return new class extends Migration
             $table->foreignId('location_id');
             $table->foreignId('user_id');
             $table->foreignId('order_id');
-            $table->foreignId('refer_a_friend_id')->nullable()->default(0)->constrained();
+            $table->foreignId('refer_a_friend_id')->nullable();
 
             $table->decimal('debit', 2);
             $table->decimal('credit', 2);

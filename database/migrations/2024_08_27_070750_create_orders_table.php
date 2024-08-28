@@ -16,9 +16,9 @@ return new class extends Migration
             $table->foreignId('location_id');
             $table->foreignId('user_id');
             $table->foreignId('payment_method_id');
-            $table->foreignId('confirmed_by')->constrained('system_user_id');
+            $table->foreignId('confirmed_by')->references('id')->on('hr_employees')->constrained();
             $table->foreignId('shipper_id')->nullable();
-            $table->foreignId('refer_a_friend_id')->nullable()->default(0)->constrained();
+            $table->foreignId('refer_a_friend_id')->nullable();
             $table->foreignId('payment_status_id');
             $table->foreignId('order_status_id');
 
