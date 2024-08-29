@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('description', 10000)->nullable();
             $table->string('logo')->nullable();
             $table->string('address', 2000)->nullable();
-            $table->string('contact');
+            $table->string('contact')->nullable();
 
             $table->boolean('is_active')->nullable()->default(0);            
             $table->integer('sort_by')->nullable()->default(0);

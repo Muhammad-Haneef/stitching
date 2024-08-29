@@ -18,7 +18,6 @@ return new class extends Migration
 
             $table->string('title');
             $table->string('slug');
-            $table->string('description', 6000)->nullable();
 
             $table->boolean('is_deletable')->nullable()->default(0);            
             $table->boolean('is_active')->nullable()->default(0);            

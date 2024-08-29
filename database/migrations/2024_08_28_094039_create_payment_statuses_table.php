@@ -19,7 +19,6 @@ return new class extends Migration
             $table->string('title', 300);
             $table->string('slug', 300);
             $table->string('color', 7)->nullable();
-            $table->string('description', 6000)->nullable();
 
             $table->boolean('is_active')->nullable()->default(0);            
             $table->integer('sort_by')->nullable()->default(0);
