@@ -9,4 +9,10 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class AlterationServiceGroup extends Model
 {
     use HasFactory, SoftDeletes;
+
+    public function services()
+    {
+        return $this->hasMany(AlterationService::class);
+    }  
+
 }

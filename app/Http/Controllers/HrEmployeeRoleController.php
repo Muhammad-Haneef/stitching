@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\UserRole;
-use App\Http\Requests\StoreUserRoleRequest;
-use App\Http\Requests\UpdateUserRoleRequest;
+use App\Models\HrEmployeeRole;
+use App\Http\Requests\StoreHrEmployeeRoleRequest;
+use App\Http\Requests\UpdateHrEmployeeRoleRequest;
 
-class UserRoleController extends Controller
+class HrEmployeeRoleController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -27,7 +27,7 @@ class UserRoleController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreUserRoleRequest $request)
+    public function store(StoreHrEmployeeRoleRequest $request)
     {
         //
     }
@@ -35,7 +35,7 @@ class UserRoleController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(UserRole $userRole)
+    public function show(HrEmployeeRole $hrEmployeeRole)
     {
         //
     }
@@ -43,7 +43,7 @@ class UserRoleController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(UserRole $userRole)
+    public function edit(HrEmployeeRole $hrEmployeeRole)
     {
         //
     }
@@ -51,7 +51,7 @@ class UserRoleController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateUserRoleRequest $request, UserRole $userRole)
+    public function update(UpdateHrEmployeeRoleRequest $request, HrEmployeeRole $hrEmployeeRole)
     {
         //
     }
@@ -59,7 +59,7 @@ class UserRoleController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(UserRole $userRole)
+    public function destroy(HrEmployeeRole $hrEmployeeRole)
     {
         //
     }
