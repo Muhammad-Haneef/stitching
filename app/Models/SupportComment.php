@@ -9,4 +9,17 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class SupportComment extends Model
 {
     use HasFactory, SoftDeletes;
+
+
+    public function location()
+    {
+        return $this->belongsTo(Location::class);
+    } 
+
+    public function support()
+    {
+        return $this->belongsTo(Support::class);
+    } 
+
+
 }

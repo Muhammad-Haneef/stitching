@@ -9,4 +9,11 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class BannerImage extends Model
 {
     use HasFactory, SoftDeletes;
+
+
+    public function banner()
+    {
+        return $this->belongsTo(Banner::class);
+    } 
+
 }

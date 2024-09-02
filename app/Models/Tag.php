@@ -9,4 +9,16 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Tag extends Model
 {
     use HasFactory, SoftDeletes;
+
+    public function location()
+    {
+        return $this->belongsTo(Location::class);
+    } 
+
+    public function products()
+    {
+        return $this->hasMany(Product::class);
+    } 
+
+
 }

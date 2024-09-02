@@ -9,4 +9,12 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class AttributeGroup extends Model
 {
     use HasFactory, SoftDeletes;
+
+    public function attribute_values()
+    {
+        return $this->hasMany(AttributeValue::class);
+    } 
+
+
+
 }

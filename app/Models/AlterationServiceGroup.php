@@ -10,6 +10,11 @@ class AlterationServiceGroup extends Model
 {
     use HasFactory, SoftDeletes;
 
+    public function location()
+    {
+        return $this->belongsTo(Location::class);
+    } 
+
     public function services()
     {
         return $this->hasMany(AlterationService::class);

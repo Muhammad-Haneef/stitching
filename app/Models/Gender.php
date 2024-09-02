@@ -9,4 +9,8 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Gender extends Model
 {
     use HasFactory, SoftDeletes;
+
+    
+
+
 }

@@ -13,9 +13,11 @@ return new class extends Migration
     {
         Schema::create('role_privileges', function (Blueprint $table) {
             $table->id();
+
             $table->foreignId('location_id');
             $table->foreignId('role_id');
             $table->foreignId('privilege_id');
+            
             $table->timestamps();
         });
     }

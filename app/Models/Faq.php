@@ -9,4 +9,11 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Faq extends Model
 {
     use HasFactory, SoftDeletes;
+
+    public function faq_type()
+    {
+        return $this->belongsTo(FaqType::class);
+    } 
+
+
 }

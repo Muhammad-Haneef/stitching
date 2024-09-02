@@ -9,4 +9,11 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Country extends Model
 {
     use HasFactory, SoftDeletes;
+
+    public function cities()
+    {
+        return $this->hasMany(City::class);
+    } 
+
+
 }

@@ -13,8 +13,7 @@ return new class extends Migration
     {
         Schema::create('style_preset_values', function (Blueprint $table) {
             $table->id();
-
-            $table->foreignId('location_id');
+            
             $table->foreignId('style_preset_id');
             $table->foreignId('style_item_id');
             $table->foreignId('style_item_option_id');

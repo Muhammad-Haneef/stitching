@@ -9,4 +9,12 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class UserMeasurementItem extends Model
 {
     use HasFactory, SoftDeletes;
+
+    
+    public function user_management()
+    {
+        return $this->belongsTo(UserMeasurement::class);
+    }  
+
+
 }

@@ -9,4 +9,12 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class AppointmentStatus extends Model
 {
     use HasFactory, SoftDeletes;
+
+
+    public function appointments()
+    {
+        return $this->hasMany(Appointment::class);
+    } 
+
+
 }
